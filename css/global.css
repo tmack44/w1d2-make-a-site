@@ -123,10 +123,14 @@ td {
   background: transparent;
   border: 2px solid black;
   box-shadow: 2px 2px 5px #000000;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
 }
 
 #email-button:hover {
   color: white;
+  border-color: white;
 }
 
 .profile-links {
@@ -140,8 +144,4 @@ td {
 
 .profile-links:visited {
   text-decoration:none;
-}
-
-button > span {
-   font-size: 50px;
 }
