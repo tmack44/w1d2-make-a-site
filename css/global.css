@@ -35,6 +35,7 @@ header {
 header > h1 {
    font-family: 'Bevan', sans-serif;
    float: left;
+   padding-left: 30px;
 }
 
 nav {
@@ -58,26 +59,11 @@ a.nav:hover {
   text-decoration: underline;
 }
 
-#section2 > button {
-   text-align: center;
-   color: white;
-   background: transparent;
-   border: 2px solid white;
-   border-radius: 5px;
-   padding: 10px;
-   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-   transition: all .3s ease;
-}
-
-#section2 > button:hover {
-   transform: translateX(-10px) translateY(-10px) scale(2.5);
-   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-}
-
 .main-container {
   margin-top: 10px;
   clear: both;
   padding-top: 85px;
+  padding-bottom: 85px;
 }
 
 .section-container {
@@ -87,7 +73,7 @@ a.nav:hover {
   border-radius: 20px;
   box-shadow: 10px 10px 10px #000000;
   opacity: 0.75;
-  width: 40%;
+  width: 45%;
   text-align: center;
   margin: 10px;
 }
@@ -99,6 +85,9 @@ footer {
    text-align: center;
    padding: 10px;
    width: 100%;
+   position:fixed;
+  bottom: 0;
+  left: 0;
 }
 
 img {
@@ -119,27 +108,38 @@ img {
   text-align: left;
 }
 
-.ugly, .beautiful, button {
-   width: 250px;
+table {
+  margin: auto;
+}
+td {
+  padding: 10px;
 }
 
-.ugly {
-   background-color: rgb(224, 205, 28);
-   border: 2px solid red;
+.left-aligned {
+  text-align: left;
 }
 
-.beautiful {
-   background: transparent;
-   border: 2px solid blue;
-   border-radius: 10px;
-   padding: 10px;
-   text-align: center;
+#email-button {
+  background: transparent;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+#email-button:hover {
+  color: white;
+}
+
+.profile-links {
    transition: all .3s ease;
+   color: black;
 }
 
-.beautiful:hover {
-   transform: scale(2) rotate(45deg);
-   border: 2px solid red;
+.profile-links:hover {
+   transform: scale(2);
+}
+
+.profile-links:visited {
+  text-decoration:none;
 }
 
 button > span {
